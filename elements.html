@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced HTML5 Feedback Form</title>
+</head>
+<body>
+
+  <h1>Advanced Feedback Form</h1>
+
+  <p>
+    We appreciate your <strong>feedback</strong>. Please complete this <em>advanced</em> form to help us improve.
+    Required fields are marked with <mark>*</mark>. You can <i>express</i> your opinions freely.
+  </p>
+
+  <form action="#" method="post" autocomplete="on">
+    
+    <fieldset>
+      <legend><b>Personal Information</b></legend>
+
+      <label for="fullname">Full Name <mark>*</mark>:</label><br>
+      <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
+
+      <label for="email">Email <mark>*</mark>:</label><br>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890"><br><br>
+
+      <label for="country">Country:</label><br>
+      <input list="countries" name="country" id="country">
+      <datalist id="countries">
+        <option value="India">
+        <option value="United States">
+        <option value="United Kingdom">
+        <option value="Australia">
+      </datalist><br><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend><b>Feedback Details</b></legend>
+
+      <label for="rating">Rate Our Service:</label><br>
+      <select id="rating" name="rating">
+        <option value="">--Select--</option>
+        <option value="excellent"><abbr title="Outstanding">Excellent</abbr></option>
+        <option value="good">Good</option>
+        <option value="fair">Fair</option>
+        <option value="poor">Poor</option>
+      </select><br><br>
+
+      <label>Would you recommend us?</label><br>
+      <input type="radio" id="yes" name="recommend" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="recommend" value="no">
+      <label for="no">No</label><br><br>
+
+      <label for="features">Which features did you use? (Choose all that apply)</label><br>
+      <input type="checkbox" id="ui" name="features" value="ui">
+      <label for="ui">User Interface</label><br>
+      <input type="checkbox" id="support" name="features" value="support">
+      <label for="support">Customer Support</label><br>
+      <input type="checkbox" id="speed" name="features" value="speed">
+      <label for="speed">Speed</label><br><br>
+
+      <label for="feedback">Your Comments:</label><br>
+      <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Type your feedback here..."></textarea><br><br>
+
+      <p>
+        You may use <kbd>Ctrl</kbd> + <kbd>Enter</kbd> to submit (if browser supports it).
+        Example comment: <q>The website was easy to navigate!</q>
+      </p>
+
+      <p>
+        The term <dfn>feedback</dfn> refers to user input aimed at improvement. You can email us at <span>feedback@example.com</span>.
+      </p>
+
+      <p>
+        <small>Your personal information will not be shared with third parties.</small>
+      </p>
+
+    </fieldset>
+
+    <br>
+    <button type="submit"><code>Submit</code> Form</button>
+    <button type="reset">Reset</button>
+
+  </form>
+
+</body>
+</html>
+
